@@ -1,0 +1,14 @@
+VTParameters:
+  metricFile: "../log/metrics"
+  trajFile: "../log/trajectory"
+  mapFile: "../mesh/map.ply"
+  overallMapVoxelSize: 0.5
+  exploredAreaVoxelSize: 0.3
+  exploredVolumeVoxelSize: 0.5
+  transInterval: 0.2
+  yawInterval: 10.0
+  overallMapDisplayInterval: 2
+  exploredAreaDisplayInterval: 1
+  OdoTopic: "/state_estimation"
+  LaserTopic: "/registered_scan"
+  TimeTopic: "/runtime"
