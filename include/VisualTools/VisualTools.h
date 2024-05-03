@@ -180,6 +180,7 @@ namespace VT
         point.z = vehicleZ;
         point.intensity = travelingDis;
         trajectory->push_back(point);
+        std::cout<<"Nice odo callback."<<std::endl;
 
         sensor_msgs::PointCloud2 trajectory2;
         pcl::toROSMsg(*trajectory, trajectory2);
@@ -241,7 +242,7 @@ namespace VT
 
             exploredAreaDisplayCount = 0;
         }
-
+        std::cout<<"Nice laser callback."<<std::endl;
         fprintf(metricFilePtr, "%f %f %f %f\n", exploredVolume, travelingDis, runtime, timeDuration);
 
         std_msgs::Float32 exploredVolumeMsg;

@@ -8,9 +8,9 @@ int main(int argc, char **argv)
     using namespace VT;
     ReadParameters(nh_);
 
-    ros::Subscriber subOdometry = nh_.subscribe<nav_msgs::Odometry>(OdoTopic_.c_str(), 5, odometryHandler);
-    ros::Subscriber subLaserCloud = nh_.subscribe<sensor_msgs::PointCloud2>(LaserTopic_.c_str(), 5, laserCloudHandler);
-    ros::Subscriber subRuntime = nh_.subscribe<std_msgs::Float32>(TimeTopic_.c_str(), 5, runtimeHandler);
+    ros::Subscriber subOdometry = nh_.subscribe<nav_msgs::Odometry>(OdoTopic_.c_str(), 5, VT::odometryHandler);
+    ros::Subscriber subLaserCloud = nh_.subscribe<sensor_msgs::PointCloud2>(LaserTopic_.c_str(), 5, VT::laserCloudHandler);
+    ros::Subscriber subRuntime = nh_.subscribe<std_msgs::Float32>(TimeTopic_.c_str(), 5, VT::runtimeHandler);
 
     ros::Publisher pubOverallMap = nh_.advertise<sensor_msgs::PointCloud2>("/overall_map", 5);
 
