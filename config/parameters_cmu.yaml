@@ -1,0 +1,14 @@
+VTParameters:
+  metricFile: "/home/december/VT_logs/metrics"
+  trajFile: "/home/december/VT_logs/trajectory"
+  mapFile: "/home/december/VT_logs/map.ply"
+  overallMapVoxelSize: 0.5
+  exploredAreaVoxelSize: 0.3
+  exploredVolumeVoxelSize: 0.5
+  transInterval: 0.2
+  yawInterval: 10.0
+  overallMapDisplayInterval: 2
+  exploredAreaDisplayInterval: 1
+  OdoTopic: "/ground_truth/state"
+  LaserTopic: "/elevation_mapping/elevation_map_points"
+  TimeTopic: "/runtime"
