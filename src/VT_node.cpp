@@ -81,7 +81,7 @@ int main(int argc, char **argv)
     fclose(metricFilePtr);
     fclose(trajFilePtr);
 
-    printf("\nExploration metrics and vehicle trajectory are saved in 'src/vehicle_simulator/log'.\n\n");
+    printf("\nExploration metrics and vehicle trajectory are saved.\n\n");
 
     return 0;
 }
