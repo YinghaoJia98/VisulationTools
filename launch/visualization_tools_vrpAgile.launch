@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="visualization_tools" type="visualizationTools" name="VisualizationTools" output="screen">
+  <rosparam file="$(find visualization_tools)/config/parameters_vrpAgile.yaml" command="load" />
+  </node>
+
+  <node pkg="visualization_tools" type="realTimePlot.py" name="realTimePlot" output="screen" respawn="true"/>
+
+</launch>

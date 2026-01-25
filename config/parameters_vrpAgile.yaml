@@ -1,0 +1,14 @@
+VTParameters:
+  metricFile: "/home/december/logs/LogsOfUfep/metrics"
+  trajFile: "/home/december/logs/LogsOfUfep/trajectory"
+  mapFile: "/home/december/logs/LogsOfUfep/map.ply"
+  overallMapVoxelSize: 0.5
+  exploredAreaVoxelSize: 0.3
+  exploredVolumeVoxelSize: 0.5
+  transInterval: 0.2
+  yawInterval: 10.0
+  overallMapDisplayInterval: 2
+  exploredAreaDisplayInterval: 1
+  OdoTopic: "/Odometry"
+  LaserTopic: "/elevation_mapping/elevation_map_points"
+  TimeTopic: "/runtime"
