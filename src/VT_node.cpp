@@ -68,7 +68,7 @@ int main(int argc, char **argv)
         if (overallMapDisplayCount >= 100 * overallMapDisplayInterval)
         {
             overallMap2.header.stamp = ros::Time().fromSec(systemTime);
-            overallMap2.header.frame_id = "map";
+            overallMap2.header.frame_id = "world";
             pubOverallMap.publish(overallMap2);
 
             overallMapDisplayCount = 0;

@@ -1,0 +1,14 @@
+VTParameters:
+  metricFile: "/home/december/logs/LogsOfPPCupy/metrics"
+  trajFile: "/home/december/logs/LogsOfPPCupy/trajectory"
+  mapFile: "/home/december/logs/LogsOfPPCupy/map.ply"
+  overallMapVoxelSize: 0.5
+  exploredAreaVoxelSize: 0.3
+  exploredVolumeVoxelSize: 0.5
+  transInterval: 0.2
+  yawInterval: 10.0
+  overallMapDisplayInterval: 2
+  exploredAreaDisplayInterval: 1
+  OdoTopic: "/Odometry"
+  LaserTopic: "/pplanner_cupy_node/tsdf_points"
+  TimeTopic: "/runtime"
