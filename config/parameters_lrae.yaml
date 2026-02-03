@@ -1,0 +1,14 @@
+VTParameters:
+  metricFile: "/home/december/VT_logs/logsForLrae/metrics"
+  trajFile: "/home/december/VT_logs/logsForLrae/trajectory"
+  mapFile: "/home/december/VT_logs/logsForLrae/map.ply"
+  overallMapVoxelSize: 0.5
+  exploredAreaVoxelSize: 0.3
+  exploredVolumeVoxelSize: 0.5
+  transInterval: 0.2
+  yawInterval: 10.0
+  overallMapDisplayInterval: 2
+  exploredAreaDisplayInterval: 1
+  OdoTopic: "/odom"
+  LaserTopic: "/registered_point_cloud"
+  TimeTopic: "/runtime"

@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="visualization_tools" type="visualizationTools" name="VisualizationTools" output="screen">
+  <rosparam file="$(find visualization_tools)/config/parameters_lrae.yaml" command="load" />
+  </node>
+
+  <node pkg="visualization_tools" type="realTimePlot.py" name="realTimePlot" output="screen" respawn="true"/>
+  <node pkg="tf" type="static_transform_publisher" name="tf_map" args="0 0 0 0 0 0 world map 100" />
+
+</launch>
